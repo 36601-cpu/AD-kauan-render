@@ -57,7 +57,7 @@ O projeto segue uma divisão em camadas: **routes → controllers → models →
    python app.py
    ```
 
-   A API ficará disponível em `https://deploy-render-ad.onrender.com`. As tabelas são criadas automaticamente na primeira execução.
+   A API ficará disponível em `https://ad-kauan-render.onrender.com`. As tabelas são criadas automaticamente na primeira execução.
 
 
 
@@ -84,7 +84,7 @@ O projeto segue uma divisão em camadas: **routes → controllers → models →
 **Upload**
 
 ```bash
-curl -X POST https://deploy-render-ad.onrender.com/uploads/upload \
+curl -X POST https://ad-kauan-render.onrender.com/uploads/upload \
   -H "Content-Type: application/json" \
   -d '{"username": "maria", "password": "123456"}'
 ```
@@ -94,12 +94,11 @@ Resposta (201): `{"message": "Usuário registrado com sucesso"}`
 **Download**
 
 ```bash
-curl -X GET https://deploy-render-ad.onrender.com/downloads/download \
+curl -X GET https://ad-kauan-render.onrender.com/downloads/download \
   -H "Content-Type: application/json" \
   -d '{"username": "maria", "password": "123456"}'
 ```
 
-Resposta (200): `{"access_token": "<token>"}`
 
 
 
